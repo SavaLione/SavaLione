@@ -1,0 +1,10 @@
+# tex
+*.fdb_latexmk
+*.log
+*.pdf
+*.aux
+*.out
+*.fls
+
+# build
+build/
