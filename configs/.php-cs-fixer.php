@@ -1,18 +1,41 @@
 <?php
+/* SPDX-License-Identifier: GPL-3.0-or-later */
+/*
+ * Copyright (C) 2022-2024 Savelii Pototskii (savalione.com)
+ * All rights reserved.
+ *
+ * Author: Savelii Pototskii <monologuesplus@gmail.com>
+ * 
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program. If not, see <http://www.gnu.org/licenses/>.
+ */
 
-// PHP configure file for 'PHP Coding Standards Fixer' language server
-//
-// Made by Saveliy Pototskiy (savalione) (savalione.com)
-// 
-// Updated: 2022-12-07
-// Date of creation: 2022-12-06
-// 
-// https://cs.symfony.com/doc/rules/
+ /**
+ * This file is PHP configure file for 'PHP Coding Standards Fixer' language server
+ * See: https://cs.symfony.com/doc/rules/
+ * Updated: 2024-01-17
+ * Created: 2022-12-06
+ *
+ * @package theme_simple_coffee
+ * @copyright 2022-2024 Savelii Pototskii (savalione.com)
+ * @author Savelii Pototskii <monologuesplus@gmail.com>
+ * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 
 $copyright_in_the_header = <<<EOF
-SPDX-License-Identifier: GPL-2.0-only
+SPDX-License-Identifier: GPL-3.0-or-later
 
-Copyright (C) 2022 Saveliy Pototskiy (savalione.com)
+Copyright (C) 2022-2024 Savelii Pototskii (savalione.com)
 EOF;
 
 return (new PhpCsFixer\Config())
@@ -174,20 +197,20 @@ return (new PhpCsFixer\Config())
 
         // Add, replace or remove header comment.
         // It may delete first comment string from the file
-        'header_comment' =>
-        [
-            // Proper header content.
-            'header' => $copyright_in_the_header,
+        // 'header_comment' =>
+        // [
+        //     // Proper header content.
+        //     'header' => $copyright_in_the_header,
 
-            // Comment syntax type.
-            'comment_type' => 'comment',
+        //     // Comment syntax type.
+        //     'comment_type' => 'comment',
 
-            // The location of the inserted header.
-            'location' => 'after_declare_strict',
+        //     // The location of the inserted header.
+        //     'location' => 'after_declare_strict',
 
-            // Whether the header should be separated from the file content with a new line.
-            'separate' => 'both'
-        ],
+        //     // Whether the header should be separated from the file content with a new line.
+        //     'separate' => 'both'
+        // ],
 
         // DocBlocks must start with two asterisks, multiline comments must start with a single asterisk, after the opening slash. Both must end with a single asterisk before the closing slash.
         'multiline_comment_opening_closing' => true,
