@@ -1,6 +1,6 @@
 % SPDX-License-Identifier: CC-BY-4.0
 %
-% Copyright (C) 2022 Saveliy Pototskiy (savalione.com)
+% Copyright (C) 2022-2024 Savelii Pototskii (savalione.com)
 %
 % Derived from SFIUCR template CV/resume:
 %
@@ -12,11 +12,12 @@
 %   Information about the font: otfinfo -i /path/to/font
 %   Installed fonts: fc-list
 %   Update fonts: fc-cache -f -v
+%   On Ubuntu you can store fonts here: /usr/local/share/fonts
 \usepackage{fontspec}
-\setmainfont{HelveticaNeue}[
-    UprightFont={HelveticaNeue},
-    BoldFont={HelveticaNeue-Bold},
-    ItalicFont={HelveticaNeue-Italic}
+\setmainfont{Roboto}[
+    UprightFont={Roboto-Regular},
+    BoldFont={Roboto-Bold},
+    ItalicFont={Roboto-Italic}
 ]
 
 \usepackage{latexsym}
@@ -79,7 +80,7 @@
 \begin{document}
 
 \begin{center}
-    {\LARGE Saveliy Pototskiy} \\ \vspace{0pt}
+    {\LARGE Savelii Pototskii} \\ \vspace{0pt}
     \begin{multicols}{2}
         \begin{flushleft}
             % \large{} \\
@@ -100,11 +101,14 @@
 \resumeSubHeadingListStart
 
 \resumeSubheading
+    {Ural Federal University}{2024 studies began -- TBD}
+    {PhD in information technology and telecommunications}{Yekaterinburg, Sverdlovsk Region, Russia}
+\resumeSubheading
     {Ural Federal University}{2021 studies began -- 2023 studies ended}
-    {magister degree of applied informatics}{Yekaterinburg, Sverdlovsk Region, Russia}
+    {Master's degree in applied informatics}{Yekaterinburg, Sverdlovsk Region, Russia}
 \resumeSubheading
     {Ural Federal University}{2017 studies began -- 2021 studies ended}
-    {bachelor degree of software engineering}{Yekaterinburg, Sverdlovsk Region, Russia}
+    {Bachelor's degree in software engineering}{Yekaterinburg, Sverdlovsk Region, Russia}
 
 \resumeSubHeadingListEnd
 
@@ -129,7 +133,7 @@
 
 \resumeSubheading
     {Lead software engineer}{July, 2022 started -- Present}
-    {Drev-Master LLC}{Yekaterinburg, Sverdlovsk Region, Russia}
+    {Drev-Master LLC (full-time)}{Yekaterinburg, Sverdlovsk Region, Russia}
     \resumeItemListStart
         \small\resumeItem{design and development of server software}
         \resumeItem{architecture development of client-server applications}
@@ -138,31 +142,41 @@
     \resumeItemListEnd
 
 \resumeSubheading
+    {Software Developer}{February, 2024 started -- Present}
+    {IMM UB RAS (part-time)}{Yekaterinburg, Sverdlovsk Region, Russia}
+    \resumeItemListStart
+        \small\resumeItem{software development}
+        \resumeItem{embedded linux development}
+        \resumeItem{network stack software development}
+    \resumeItemListEnd
+
+\resumeSubheading
     {Master of Science}{March, 2023 started -- Present}
-    {Ural Federal University}{Yekaterinburg, Sverdlovsk Region, Russia}
+    {Ural Federal University (part-time)}{Yekaterinburg, Sverdlovsk Region, Russia}
     \resumeItemListStart
         \small\resumeItem{design and development of software}
         \resumeItem{web application development}
         \resumeItem{architecture development of client-server applications}
-        \resumeItem{network architecture development}
+        \resumeItem{supervision of student projects}
+        \resumeItem{teaching}
     \resumeItemListEnd
 
 \resumeSubheading
-    {Software engineer}{Mar, 2018 started -- July, 2022 ended}
-    {Drev-Master LLC}{Yekaterinburg, Sverdlovsk Region, Russia}
+    {Software Engineer}{Mar, 2018 started -- July, 2022 ended}
+    {Drev-Master LLC (full-time)}{Yekaterinburg, Sverdlovsk Region, Russia}
     \resumeItemListStart
         \small\resumeItem{design and development of server software}
         \resumeItem{system administration of a complex of servers}
         \resumeItem{development of modules for the sites, databases and web servers}
     \resumeItemListEnd
 
-\resumeSubheading
-    {Network engineer}{Apr, 2015 started -- Feb, 2018 ended}
-    {Freelance}{Yekaterinburg, Sverdlovsk Region, Russia}
-    \resumeItemListStart
-        \small\resumeItem{server administration (linux, bsd)}
-        \resumeItem{network software development}
-    \resumeItemListEnd
+%\resumeSubheading
+%    {Network engineer}{Apr, 2015 started -- Feb, 2018 ended}
+%    {Freelance}{Yekaterinburg, Sverdlovsk Region, Russia}
+%    \resumeItemListStart
+%        \small\resumeItem{server administration (linux, bsd)}
+%        \resumeItem{network software development}
+%    \resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
@@ -193,14 +207,17 @@
 \section{Specialized Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
     \normalsize{\item{
-                    \textbf{Programming Languages}{: C++, C, PHP} \\
-                    \textbf{Compilers}{: GCC, Clang, MinGW}\\
-                    \textbf{Tools}{: CMake, Standard Template Library, GNU Debugger (gdb), OpenMP, OpenCV, Git, ZFS, VPP, DPDK} \\
-                    \textbf{Operating systems}{: Ubuntu, Debian, FreeBSD, NetBSD, pfSense, Cisco IOS} \\
-                    \textbf{Web servers}{: Nginx, Lighttpd, Apache} \\
-                    \textbf{Web tools}{: Zabbix, Grafana, Asterisk, Jekyll} \\
-                    \textbf{Databases}{: MariaDB, MySQL, sqlite} \\
-                    \textbf{Microcontrollers}{: STM32, ESP32, Raspberry pi pico} \\
+                    \textbf{Main Programming Language}{: C++} \\
+                    \textbf{Additional Programming Languages}{: C, PHP, Python, Bash} \\
+                    \textbf{Compilers}{: GCC, Clang, MinGW} \\
+                    \textbf{Libraries}{: STL, Boost, SDL2, OpenCL, OpenMP} \\
+                    \textbf{Tools}{: CMake, Git} \\
+                    \textbf{Kernels}{: Linux, BSD} \\
+%                    \textbf{Web servers}{: Nginx, Lighttpd} \\
+%                    \textbf{Web tools}{: Zabbix, Grafana, Asterisk, Jekyll} \\
+%                    \textbf{Databases}{: MariaDB, MySQL, sqlite} \\
+%                    \textbf{Microcontrollers}{: STM32, ESP32, Raspberry pi pico, RISC-V} \\
+                    \textbf{Architectures}{: X86-64, RISC-V, ARM, SPARC V9} \\
               }}
 \end{itemize}
 
@@ -223,5 +240,7 @@
                     \textbf{Personal web page}{: \href{https://savalione.com}{savalione.com} } \\
               }}
 \end{itemize}
+
+
 
 \end{document}
