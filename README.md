@@ -11,7 +11,7 @@ The main programming language I use is C++.
 * 2023--TBD, Ural Federal University, PhD in information technology and telecommunications.
 
 ## Contact information
-* Email: monologuesplus@gmail.com
+* Email: savelii.pototskii@gmail.com
 * LinkedIn: [linkedin.com/in/savalione/](https://www.linkedin.com/in/savalione/)
 * Github: [github.com/SavaLione](https://github.com/SavaLione)
 * Personal web page: [savalione.com](https://savalione.com)

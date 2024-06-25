@@ -4,7 +4,7 @@
  * Copyright (C) 2022-2024 Savelii Pototskii (savalione.com)
  * All rights reserved.
  *
- * Author: Savelii Pototskii <monologuesplus@gmail.com>
+ * Author: Savelii Pototskii <savelii.pototskii@gmail.com>
  * 
  * This program is free software; you can redistribute it and/or
  * modify it under the terms of the GNU General Public License
@@ -28,7 +28,7 @@
  *
  * @package theme_simple_coffee
  * @copyright 2022-2024 Savelii Pototskii (savalione.com)
- * @author Savelii Pototskii <monologuesplus@gmail.com>
+ * @author Savelii Pototskii <savelii.pototskii@gmail.com>
  * @license http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
