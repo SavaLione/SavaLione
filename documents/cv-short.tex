@@ -1,0 +1,392 @@
+% SPDX-License-Identifier: CC-BY-4.0
+%
+% Copyright (C) 2022-2025 Savelii Pototskii (savalione.com)
+%
+% Derived from SFIUCR template CV/resume:
+%
+% Copyright (C) 2022 ComplexityExplorer (https://www.overleaf.com/latex/templates/sfiucr-template-cv-slash-resume/xqvshnpvtsbv)
+
+% Description: It's a short resume
+% Updated: 2025-05-08
+
+\documentclass[a4paper,11pt]{article}
+
+% You can use this tools to find font in your system:
+%   Information about the font: otfinfo -i /path/to/font
+%   Installed fonts: fc-list
+%   Update fonts: fc-cache -f -v
+%   On Ubuntu you can store fonts here: /usr/local/share/fonts
+\usepackage{fontspec}
+\setmainfont{Roboto}[
+    UprightFont={Roboto-Regular},
+    BoldFont={Roboto-Bold},
+    ItalicFont={Roboto-Italic}
+]
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+
+% Document properties (pdf)
+\hypersetup{
+%    bookmarks=false,                            % show bookmarks bar?
+    unicode=true,                               % non-Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,                            % show Acrobat’s toolbar?
+    pdfmenubar=true,                            % show Acrobat’s menu?
+    pdffitwindow=false,                         % window fit to page when opened
+%    pdfstartview={FitW},                       % fits the width of the page to the window
+    pdftitle={Savelii Pototskii - Short resume}, % title
+    pdfauthor={Savelii Pototskii},              % author
+    pdfsubject={Resume - short},                 % subject of the document
+%    pdfcreator={\LaTeX},                       % creator of the document
+    pdfproducer={\LaTeX},                       % producer of the document
+    pdfkeywords={Resume,} {cv, } {application}, % list of keywords
+    pdfnewwindow=true,                          % links in new window
+    colorlinks=false,                           % false: boxed links; true: colored links
+    linkcolor=red,                              % color of internal links
+    citecolor=green,                            % color of links to bibliography
+    filecolor=magenta,                          % color of file links
+    urlcolor=cyan                               % color of external links
+}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\setlength{\footskip}{10pt}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{0.0in}
+\addtolength{\evensidemargin}{0.0in}
+\addtolength{\textwidth}{0.0in}
+\addtolength{\topmargin}{0.2in}
+\addtolength{\textheight}{0.0in}
+
+\urlstyle{same}
+
+%\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+    \it\vspace{3pt}
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+\newcommand{\resumeItem}[1]{
+    \item{
+                {#1 \vspace{-4pt}}
+          }
+}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+        \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-10pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-3pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+        \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+        \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE Savelii Pototskii} \\ \vspace{0pt}
+    \begin{multicols}{2}
+        \begin{flushleft}
+            % \large{} \\
+            % \large{} \\
+        \end{flushleft}
+
+        \begin{flushright}
+            \href{https://savalione.com}{savalione.com} \\
+            %\large{savalione.com} \\
+
+            \href{mailto:{savelii.pototskii@gmail.com}} \large{savelii.pototskii@gmail.com}
+        \end{flushright}
+    \end{multicols}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+    {Ural Federal University}{Sept. 2023}
+    {PhD in information technology and telecommunications}{Yekaterinburg, Sverdlovsk Region, Russia}
+\resumeSubheading
+    {Ural Federal University}{Sept. 2021 -- June 2023}
+    {Master's degree in applied informatics}{Yekaterinburg, Sverdlovsk Region, Russia}
+\resumeSubheading
+    {Ural Federal University}{Sept. 2017 -- June 2021}
+    {Bachelor's degree in software engineering}{Yekaterinburg, Sverdlovsk Region, Russia}
+
+\resumeSubHeadingListEnd
+
+%-----------RESEARCH EXPERIENCE-----------
+% \section{Research Experience}
+% \resumeSubHeadingListStart
+
+% \resumeSubheading
+%         {Research experience title}{Month, Year started -- Month, Year ended or "Present" if ongoing}
+%         {University, Company or Organization}{City, State, optional Country}
+%       \resumeItemListStart
+%         \small\resumeItem{very short description of one thing you did}
+%         \resumeItem{very short description of another thing you did}
+%         \resumeItem{very short description if there was another thing you did}
+%     \resumeItemListEnd
+
+% \resumeSubHeadingListEnd
+
+%-----------OTHER EXPERIENCE-----------
+\section{Other Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+    {Lead software engineer}{July 2022}
+    {Drev-Master LLC (full-time)}{Yekaterinburg, Sverdlovsk Region, Russia}
+    \resumeItemListStart
+        \small\resumeItem{Design and development of server software.}
+        \resumeItem{Architecture development of client-server applications.}
+        \resumeItem{Network architecture development.}
+        \resumeItem{C++ software optimization and unit testing.}
+    \resumeItemListEnd
+
+\resumeSubheading
+    {Software Developer}{Feb. 2024}
+    {IMM UB RAS (part-time)}{Yekaterinburg, Sverdlovsk Region, Russia}
+    \resumeItemListStart
+        \small\resumeItem{Software development.}
+        \resumeItem{Embedded linux development.}
+        \resumeItem{Network stack software development.}
+    \resumeItemListEnd
+
+\resumeSubheading
+    {Master of Science}{March 2023}
+    {Ural Federal University (part-time)}{Yekaterinburg, Sverdlovsk Region, Russia}
+    \resumeItemListStart
+        \small\resumeItem{Design and development of software.}
+        \resumeItem{Web application development.}
+        \resumeItem{Architecture development of client-server applications.}
+        \resumeItem{Supervision of student projects.}
+        \resumeItem{Teaching.}
+    \resumeItemListEnd
+
+\resumeSubheading
+    {Software Engineer}{March 2018 -- July 2022}
+    {Drev-Master LLC (full-time)}{Yekaterinburg, Sverdlovsk Region, Russia}
+    \resumeItemListStart
+        \small\resumeItem{Design and development of server software.}
+        \resumeItem{System administration of a complex of servers.}
+        \resumeItem{Development of modules for the sites, databases and web servers.}
+    \resumeItemListEnd
+
+%\resumeSubheading
+%    {Network engineer}{Apr, 2015 started -- Feb, 2018 ended}
+%    {Freelance}{Yekaterinburg, Sverdlovsk Region, Russia}
+%    \resumeItemListStart
+%        \small\resumeItem{server administration (linux, bsd)}
+%        \resumeItem{network software development}
+%    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------RESEARCH PRESENTATIONS-----------
+% \section{Research Presentations} 
+% \begin{itemize}[leftmargin=0.15in, label={}]
+%     \normalsize{\item{
+%     {citation in your preferred format -- include all authors who contributed}{} \\
+%     {citation in your preferred format -- include all authors who contributed}{} 
+% }}
+%  \end{itemize}
+
+%-----------AWARDS & HONORS-----------
+% \section{Awards \& Honors} 
+% \resumeSubHeadingListStart
+%     \resumeSubheading
+%     {Title or brief description of the award}{}
+%     {University, Sponsor or Organization}{year(s)}
+%     \resumeSubheading
+%     {Title or brief description of the award}{}
+%     {University, Sponsor or Organization}{year(s)}
+%     \resumeSubheading
+%     {Title or brief description of the award}{}
+%     {University, Sponsor or Organization}{year(s)}
+% \resumeSubHeadingListEnd
+
+%-----------SOFTWARE DEVELOPMENT SKILLS-----------
+\section{Software Development Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \normalsize{\item{
+                    \textbf{Main Programming Language}{: C++} \\
+                    \textbf{Additional Programming Languages}{: C, PHP, Python} \\
+                    \textbf{Compilers}{: GCC, Clang, MinGW} \\
+                    \textbf{Libraries}{: STL, Boost, Protobuf, spdlog, SDL2, ImGui, libcurl, SQLite} \\
+                    \textbf{Tools}{: CMake, Git, Bash, Google Test, Doxygen, Google Benchmark} \\
+                    \textbf{Kernels}{: Linux, BSD} \\
+                    \textbf{HPC}{: OpenCL, OpenMP, Khronos SYCL} \\
+                    \textbf{Architectures}{: X86-64, RISC-V, ARM, SPARC V9} \\
+              }}
+\end{itemize}
+
+%-----------DEVOPS SKILLS-----------
+% \section{DevOps Skills}
+% \begin{itemize}[leftmargin=0.15in, label={}]
+%     \normalsize{\item{
+%                     \textbf{Web servers}{: Nginx, Lighttpd} \\
+%                     \textbf{Web tools}{: Grafana, Asterisk, Jekyll} \\
+%                     \textbf{CI/CD}{: Jenkins} \\
+%                     \textbf{Monitoring}{: Zabbix} \\
+%                     \textbf{Containers and VMs}{: Linux LXC, Incus, Docker, FreeBSD jail, KVM, Proxmox} \\
+%                     \textbf{Databases}{: SQLite, MariaDB (MySQL), PostgreSQL} \\
+%                     \textbf{Tools}{: OpenZFS, Systemd, VPP} \\
+%                     \textbf{OS and Distributions}{: Ubuntu LTS, Debian, FreeBSD, NetBSD, pfSense} \\
+%                     \textbf{Servers}{: Hewlett-Packard, Dell, Sun Microsystems} \\
+%               }}
+% \end{itemize}
+
+%-----------Hardware Engineering Skills -----------
+% \section{Hardware Engineering Skills}
+% \begin{itemize}[leftmargin=0.15in, label={}]
+%     \normalsize{\item{
+%                     \textbf{Tools}{: KiCad, OpenOCD, Logic Analyzers} \\
+%                     \textbf{RTOS}{: FreeRTOS, NuttX} \\
+%                     \textbf{Microcontrollers}{: Raspberry Pi Pico, STM32, ESP32} \\
+%                     \textbf{SBCs}{: Raspberry Pi Zero 2w, Milk-v Duo, Orange Pi} \\
+%                     \textbf{FPGAs}{: Tang Nano 9K (Gowin GW1NR-9 ), Tang Nano 1K (Gowin GW1NR-1)} \\
+%                     \textbf{Architectures}{: X86-64, RISC-V, ARM, SPARC V9} \\
+%               }}
+% \end{itemize}
+
+%-----------OTHER SKILLS-----------
+% \section{Other Skills}
+% \begin{itemize}[leftmargin=0.15in, label={}]
+%     \normalsize{\item{
+%                     \textbf{Languages}{:}
+%                     \begin{itemize}
+%                         \item English -- C1.
+%                         \item Russian -- native.
+%                     \end{itemize}
+%                     \textbf{Typesetting}{: \LaTeX} \\
+%               }}
+% \end{itemize}
+
+
+% Define a new command \talkentry
+% Takes two arguments:
+% #1: Text for the left column (talk title)
+% #2: Text for the right column (institution and date)
+\newcommand{\talkentry}[2]{%
+    \item % This command will generate a new list item
+    \noindent % Ensures the tabularx starts at the beginning of the item line
+    \begin{tabularx}{\linewidth}[t]{@{} X @{\hspace{2em}} r @{}}
+        #1 & % Argument 1: Talk title
+        #2   % Argument 2: Institution (bolded) and date
+    \end{tabularx}%
+}
+
+%-----------TALKS-----------
+% \section{Talks}
+% \begin{enumerate}[leftmargin=0.35in, labelindent=0pt, itemsep=1.5pt]
+% \normalsize{
+%     \talkentry{Infrastructure for the Management of Multi-Axis Robotic Manipulators in the ROS Environment}{\textbf{IMM UB RAS} -- 2021-05-20}
+%     \talkentry{Developing a Vector-Based Data Router to Enhance Network Throughput}{\textbf{IMM UB RAS} -- 2022-10-20}
+%     \talkentry{Vector-Based Router Model}{\textbf{IMM UB RAS} -- 2023-04-27}
+%     \talkentry{The Milk-V Duo Microcontroller on the RISC-V Architecture}{\textbf{IMM UB RAS} -- 2024-02-01}
+%     \talkentry{Report on Working with the Yahboom K210 Visual Recognition Module Development Board, ROS (Robot Operating System) Implementation Results, Analysis of Apache NuttX, Introduction to ld (Linker) Scripts, SSG Jekyll, and Working with Hewlett-Packard Physical Servers}{\textbf{IMM UB RAS} -- 2024-05-23}
+%     \talkentry{A History of Popular Microprocessors and Microcontrollers, Associated Development Tools, and Real-Time Operating Systems (RTOS)}{\textbf{IMM UB RAS} -- 2024-10-24}
+%     \talkentry{Development and Analysis of Scalable Data Processing Architectures Based on the Low-Power Gowin GW1NR-9 FPGA}{\textbf{URFU IMKN} -- 2024-12-19}
+%     \talkentry{Development of an Electronic Device}{\textbf{URFU IMKN} -- 2024-02-13}
+%     \talkentry{Development of an Electronic Device}{\textbf{IMM UB RAS} -- 2025-04-20}
+% }
+% \end{enumerate}
+
+%-----------PUBLICATIONS-----------
+% \section{Publications}
+% \begin{enumerate}[leftmargin=0.35in, labelindent=0pt, itemsep=0pt]
+% \normalsize{
+%     \talkentry{Worldwide web as an information and communication environment of internet auctions for sale of antiques}{2021-04-12}
+%     \talkentry{Development of Control Software and a Visual Emulator for a Multi-Axis Industrial Robot \textit{(bachelor’s degree thesis)}}{2021-06-24}
+%     \talkentry{Comparing the performance of a scalar software router with a vector-based software router}{2023-05-28}
+%     \talkentry{Comparison of network traffic generators to optimize the process of testing telecommunications equipment}{2023-05-28}
+%     \talkentry{Developing a Vector-Based Data Router to Enhance Network Throughput \textit{(master's degree thesis)}}{2023-07-01}
+% }
+% \end{enumerate}
+
+%-----------TEACHING-----------
+% \section{Teaching}
+% \resumeSubHeadingListStart
+%     \resumeSubheading
+%         {Ural Federal University}{March 2023 -- May 2023}
+%         {Institute of Fundamental Education}{}
+%         \resumeItemListStart
+%             \small\resumeItem{Mentored student teams in the development of scalable web applications.}
+%         \resumeItemListEnd
+
+%     \resumeSubheading
+%         {Ural Federal University }{Sept. 2023 - Dec. 2023}
+%         {Institute of Fundamental Education}{}
+%         \resumeItemListStart
+%             \small\resumeItem{Directed student projects centered on creating web applications for online educational platforms.}
+%             \resumeItem{Guided students through game development projects, offering expertise in code structure, game design, library selection, and development approaches.}
+%         \resumeItemListEnd
+
+%     \resumeSubheading
+%         {Ural Federal University}{Feb. 2024 - May 2024}
+%         {Institute of Fundamental Education}{}
+%         \resumeItemListStart
+%             \small\resumeItem{Instructed foundational Java programming, emphasizing its practical use in web development.}
+%             \resumeItem{Supported student game development, providing specialized assistance with game mechanics and the effective application of programming libraries.}
+%             \resumeItem{Oversaw the creation and integration of web educational platforms by student teams within the university's infrastructure.}
+%         \resumeItemListEnd
+% \resumeSubHeadingListEnd
+
+%-----------OTHER INTERESTS-----------
+% \section{Other Interests}
+% \begin{itemize}[leftmargin=0.15in, label={}]
+%     \normalsize{\item{
+%         \textbf{3D Printing}{: Experienced with various 3D printers through university access and personal projects } \\
+%         \textbf{Sport}{: Running and cycling} \\
+%         \textbf{Open Source}{: I care deeply about presenting the benefits of open source software} \\
+%         \textbf{Photography}{: Skilled in using DSLR cameras, applying this to visually document personal projects and explore creative outlets} \\
+%     }}    
+% \end{itemize}
+
+%-----------LINKS-----------
+\section{Links}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \normalsize{\item{
+                    \textbf{Email}{:  savelii.pototskii@gmail.com} \\
+                    \textbf{LinkedIn}{:  \href{https://linkedin.com/in/savalione/}{linkedin.com/in/savalione/}} \\
+                    \textbf{Github}{:  \href{https://github.com/SavaLione}{github.com/SavaLione}} \\
+                    \textbf{Personal web page}{: \href{https://savalione.com}{savalione.com} } \\
+              }}
+\end{itemize}
+
+%-----------ADDITIONAL LINKS-----------
+% \section{Additional links}
+% \begin{itemize}[leftmargin=0.15in, label={}]
+%     \normalsize{\item{
+%                     \textbf{ORCID}{: \href{https://orcid.org/0009-0006-5105-465X}{orcid.org/0009-0006-5105-465X} } \\
+%                     \textbf{Google for developers}{: \href{https://g.dev/savalione}{g.dev/savalione} } \\
+%                     \textbf{Linux foundation}{: \href{https://openprofile.dev/profile/SavaLione}{openprofile.dev/profile/SavaLione} } \\
+%                     \textbf{Credly}{: \href{https://www.credly.com/users/sava}{@sava} } \\
+%               }}
+% \end{itemize}
+
+\end{document}

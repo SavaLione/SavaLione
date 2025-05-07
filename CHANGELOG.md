@@ -1,3 +1,13 @@
+2025-05-08
+----------
+- Changed resumes
+    - Added a short version of my resume (``documents/cv-short.tex``)
+    - Translated the short version of my resume to Russian language (``documents/cv-short-ru.tex``)
+    - Added a full version of my resume (``documents/cv-full.tex``)
+    - Translated the full version of my resume to Russian language (``documents/cv-full-ru.tex``)
+- Removed old resume (``documents/cv.tex``)
+- Added a script to compile all 4 resumes at once (``documents/compile-all.sh``)
+
 2024-06-26
 ----------
 - Changed vs code settings (``.vscode/settings.json``)

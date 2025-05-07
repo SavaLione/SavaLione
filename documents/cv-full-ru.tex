@@ -1,0 +1,391 @@
+% SPDX-License-Identifier: CC-BY-4.0
+%
+% Copyright (C) 2022-2025 Savelii Pototskii (savalione.com)
+%
+% Derived from SFIUCR template CV/resume:
+%
+% Copyright (C) 2022 ComplexityExplorer (https://www.overleaf.com/latex/templates/sfiucr-template-cv-slash-resume/xqvshnpvtsbv)
+
+% Description: It's a full resume
+% Updated: 2025-05-08
+
+\documentclass[a4paper,11pt]{article}
+
+% You can use this tools to find font in your system:
+%   Information about the font: otfinfo -i /path/to/font
+%   Installed fonts: fc-list
+%   Update fonts: fc-cache -f -v
+%   On Ubuntu you can store fonts here: /usr/local/share/fonts
+\usepackage{fontspec}
+\setmainfont{Roboto}[
+    UprightFont={Roboto-Regular},
+    BoldFont={Roboto-Bold},
+    ItalicFont={Roboto-Italic}
+]
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+
+% Document properties (pdf)
+\hypersetup{
+%    bookmarks=false,                            % show bookmarks bar?
+    unicode=true,                               % non-Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,                            % show Acrobat’s toolbar?
+    pdfmenubar=true,                            % show Acrobat’s menu?
+    pdffitwindow=false,                         % window fit to page when opened
+%    pdfstartview={FitW},                       % fits the width of the page to the window
+    pdftitle={Савелий Потоцкий - Подробное резюме}, % title
+    pdfauthor={Савелий Потоцкий},              % author
+    pdfsubject={Резюме - подробное},                 % subject of the document
+%    pdfcreator={\LaTeX},                       % creator of the document
+    pdfproducer={\LaTeX},                       % producer of the document
+    pdfkeywords={Резюме,} {resume, } {cv, } {application}, % list of keywords
+    pdfnewwindow=true,                          % links in new window
+    colorlinks=false,                           % false: boxed links; true: colored links
+    linkcolor=red,                              % color of internal links
+    citecolor=green,                            % color of links to bibliography
+    filecolor=magenta,                          % color of file links
+    urlcolor=cyan                               % color of external links
+}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\setlength{\footskip}{10pt}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{0.0in}
+\addtolength{\evensidemargin}{0.0in}
+\addtolength{\textwidth}{0.0in}
+\addtolength{\topmargin}{0.2in}
+\addtolength{\textheight}{0.0in}
+
+\urlstyle{same}
+
+%\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+    \it\vspace{3pt}
+}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+\newcommand{\resumeItem}[1]{
+    \item{
+                {#1 \vspace{-4pt}}
+          }
+}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+        \textit{\small #3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-10pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-3pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+        \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+        \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE Савелий Потоцкий} \\ \vspace{0pt}
+    \begin{multicols}{2}
+        \begin{flushleft}
+            % \large{} \\
+            % \large{} \\
+        \end{flushleft}
+
+        \begin{flushright}
+            \href{https://savalione.com}{savalione.com} \\
+            %\large{savalione.com} \\
+
+            \href{mailto:{savelii.pototskii@gmail.com}} \large{savelii.pototskii@gmail.com}
+        \end{flushright}
+    \end{multicols}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Образование}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+    {Уральский Федеральный Университет}{Сент. 2023}
+    {PhD в области информационных технологий и телекоммуникаций}{Екатеринбург, Россия}
+\resumeSubheading
+    {Уральский Федеральный Университет}{Сент. 2021 -- Июнь 2023}
+    {Магистр прикладной информатики}{Екатеринбург, Россия}
+\resumeSubheading
+    {Уральский Федеральный Университет}{Сент. 2017 -- Июнь 2021}
+    {Бакалавр в области разработки программного обеспечения}{Екатеринбург, Россия}
+
+\resumeSubHeadingListEnd
+
+%-----------RESEARCH EXPERIENCE-----------
+% \section{Research Experience}
+% \resumeSubHeadingListStart
+
+% \resumeSubheading
+%         {Research experience title}{Month, Year started -- Month, Year ended or "Present" if ongoing}
+%         {University, Company or Organization}{City, State, optional Country}
+%       \resumeItemListStart
+%         \small\resumeItem{very short description of one thing you did}
+%         \resumeItem{very short description of another thing you did}
+%         \resumeItem{very short description if there was another thing you did}
+%     \resumeItemListEnd
+
+% \resumeSubHeadingListEnd
+
+%-----------OTHER EXPERIENCE-----------
+\section{Опыт работы}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+    {Ведущий инженер-программист}{Июль 2022}
+    {ООО <<Древ Мастер>> (на постоянной основе)}{Екатеринбург, Россия}
+    \resumeItemListStart
+        \small\resumeItem{Проектирование и разработка серверного программного обеспечения.}
+        \resumeItem{Разработка архитектуры клиент-серверных приложений.}
+        \resumeItem{Разработка сетевой архитектуры.}
+        \resumeItem{Оптимизация программного обеспечения на C++ и модульное тестирование.}
+    \resumeItemListEnd
+
+\resumeSubheading
+    {Программист}{Февр. 2024}
+    {ИММ УрО РАН (неполная занятость)}{Екатеринбург, Россия}
+    \resumeItemListStart
+        \small\resumeItem{Разработка программного обеспечения.}
+        \resumeItem{Разработка встроенных систем Linux.}
+        \resumeItem{Разработка сетевого программного обеспечения.}
+    \resumeItemListEnd
+
+\resumeSubheading
+    {Учебный мастер}{Март 2023}
+    {Уральский Федеральный Университет (неполная занятость)}{Екатеринбург, Россия}
+    \resumeItemListStart
+        \small\resumeItem{Проектирование и разработка программного обеспечения.}
+        \resumeItem{Разработка веб-приложений.}
+        \resumeItem{Разработка архитектуры клиент-серверных приложений.}
+        \resumeItem{Руководство студенческими проектами.}
+        \resumeItem{Преподавание.}
+    \resumeItemListEnd
+
+\resumeSubheading
+    {Инженер-программист}{Март 2018 -- Июль 2022}
+    {ООО <<Древ Мастер>> (на постоянной основе)}{Екатеринбург, Россия}
+    \resumeItemListStart
+        \small\resumeItem{Проектирование и разработка серверного программного обеспечения.}
+        \resumeItem{Системное администрирование комплекса серверов.}
+        \resumeItem{Разработка модулей для сайтов, баз данных и веб-серверов.}
+    \resumeItemListEnd
+
+%\resumeSubheading
+%    {Network engineer}{Apr, 2015 started -- Feb, 2018 ended}
+%    {Freelance}{Екатеринбург, Россия}
+%    \resumeItemListStart
+%        \small\resumeItem{server administration (linux, bsd)}
+%        \resumeItem{network software development}
+%    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------RESEARCH PRESENTATIONS-----------
+% \section{Research Presentations} 
+% \begin{itemize}[leftmargin=0.15in, label={}]
+%     \normalsize{\item{
+%     {citation in your preferred format -- include all authors who contributed}{} \\
+%     {citation in your preferred format -- include all authors who contributed}{} 
+% }}
+%  \end{itemize}
+
+%-----------AWARDS & HONORS-----------
+% \section{Awards \& Honors} 
+% \resumeSubHeadingListStart
+%     \resumeSubheading
+%     {Title or brief description of the award}{}
+%     {University, Sponsor or Organization}{year(s)}
+%     \resumeSubheading
+%     {Title or brief description of the award}{}
+%     {University, Sponsor or Organization}{year(s)}
+%     \resumeSubheading
+%     {Title or brief description of the award}{}
+%     {University, Sponsor or Organization}{year(s)}
+% \resumeSubHeadingListEnd
+
+%-----------SOFTWARE DEVELOPMENT SKILLS-----------
+\section{Навыки разработки программного обеспечения}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \normalsize{\item{
+                    \textbf{Основной язык программирования}{: C++} \\
+                    \textbf{Дополнительные языки программирования}{: C, PHP, Python} \\
+                    \textbf{Компиляторы}{: GCC, Clang, MinGW} \\
+                    \textbf{Библиотеки}{: STL, Boost, Protobuf, spdlog, SDL2, ImGui, libcurl, SQLite} \\
+                    \textbf{Инструменты}{: CMake, Git, Bash, Google Test, Doxygen, Google Benchmark} \\
+                    \textbf{Ядра}{: Linux, BSD} \\
+                    \textbf{HPC}{: OpenCL, OpenMP, Khronos SYCL} \\
+                    \textbf{Архитектуры}{: X86-64, RISC-V, ARM, SPARC V9} \\
+              }}
+\end{itemize}
+
+%-----------DEVOPS SKILLS-----------
+\section{Навыки DevOps}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \normalsize{\item{
+                    \textbf{Веб-серверы}{: Nginx, Lighttpd} \\
+                    \textbf{Веб-инструменты}{: Grafana, Asterisk, Jekyll} \\
+                    \textbf{CI/CD}{: Jenkins} \\
+                    \textbf{Мониторинг}{: Zabbix} \\
+                    \textbf{Контейнеры и VM}{: Linux LXC, Incus, Docker, FreeBSD jail, KVM, Proxmox} \\
+                    \textbf{Базы данных}{: SQLite, MariaDB (MySQL), PostgreSQL} \\
+                    \textbf{Инструменты}{: OpenZFS, Systemd, VPP} \\
+                    \textbf{ОС и дистрибутивы}{: Ubuntu LTS, Debian, FreeBSD, NetBSD, pfSense} \\
+                    \textbf{Серверы}{: Hewlett-Packard, Dell, Sun Microsystems} \\
+              }}
+\end{itemize}
+
+%-----------Hardware Engineering Skills -----------
+\section{Навыки разработки аппаратного обеспечения}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \normalsize{\item{
+                    \textbf{Инструменты}{: KiCad, OpenOCD, логические анализаторы} \\
+                    \textbf{RTOS}{: FreeRTOS, NuttX} \\
+                    \textbf{Микроконтроллеры}{: Raspberry Pi Pico, STM32, ESP32} \\
+                    \textbf{Одноплатные компьютеры}{: Raspberry Pi Zero 2w, Milk-v Duo, Orange Pi} \\
+                    \textbf{FPGA}{: Tang Nano 9K (Gowin GW1NR-9), Tang Nano 1K (Gowin GW1NR-1)} \\
+                    \textbf{Архитектуры}{: X86-64, RISC-V, ARM, SPARC V9} \\
+              }}
+\end{itemize}
+
+%-----------OTHER SKILLS-----------
+\section{Другие навыки}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \normalsize{\item{
+                    \textbf{Языки}{:}
+                    \begin{itemize}
+                        \item Английский -- C1.
+                        \item Русский -- родной.
+                    \end{itemize}
+                    \textbf{Системы разметки текста}{: \LaTeX} \\
+              }}
+\end{itemize}
+
+% Define a new command \talkentry
+% Takes two arguments:
+% #1: Text for the left column (talk title)
+% #2: Text for the right column (institution and date)
+\newcommand{\talkentry}[2]{%
+    \item % This command will generate a new list item
+    \noindent % Ensures the tabularx starts at the beginning of the item line
+    \begin{tabularx}{\linewidth}[t]{@{} X @{\hspace{2em}} r @{}}
+        #1 & % Argument 1: Talk title
+        #2   % Argument 2: Institution (bolded) and date
+    \end{tabularx}%
+}
+
+%-----------TALKS-----------
+\section{Выступления}
+\begin{enumerate}[leftmargin=0.35in, labelindent=0pt, itemsep=1.5pt]
+\normalsize{
+    \talkentry{Инфраструктура для управления многосевыми роботами-манипуляторами в среде ROS}{\textbf{ИММ УрО РАН} -- 2021-05-20}
+    \talkentry{Разработка маршрутизатора передачи данных на основе векторов для увеличения пропускной способности сети}{\textbf{ИММ УрО РАН} -- 2022-10-20}
+    \talkentry{Модель маршрутизаторов на основе векторов}{\textbf{ИММ УрО РАН} -- 2023-04-27}
+    \talkentry{Микроконтроллер Milk-v Duo на архитектуре RISC-V}{\textbf{ИММ УрО РАН} -- 2024-02-01}
+    \talkentry{Отчёт по работе с платой для разработки Yahboom K210 Visual Recognition Module, результаты работы с ROS (Robot Operating System), анализ Apache NuttX, введение в ld scripts (скрипты линковщика), SSG Jekyll, работа с физическими серверами производства компании Hewlett-Packard}{\textbf{ИММ УрО РАН} -- 2024-05-23}
+    \talkentry{История популярных микропроцессоров, микроконтроллеров, инструменты для работы с ними и операционные системы реального времени}{\textbf{ИММ УрО РАН} -- 2024-10-24}
+    \talkentry{Разработка и анализ масштабируемых архитектур для обработки данных на основе малопотребляющих FPGA Gowin GW1NR-9}{\textbf{УрФУ ИМКН} -- 2024-12-19}
+    \talkentry{Разработка электронного устройства}{\textbf{УрФУ ИМКН} -- 2024-02-13}
+    \talkentry{Разработка электронного устройства}{\textbf{ИММ УрО РАН} -- 2025-04-20}
+}
+\end{enumerate}
+
+%-----------PUBLICATIONS-----------
+\section{Публикации}
+\begin{enumerate}[leftmargin=0.35in, labelindent=0pt, itemsep=0pt]
+\normalsize{
+    \talkentry{Всемирная паутина как информационно-коммуникационная среда функционирования интернет-аукционов по продаже антиквариата}{2021-04-12}
+    \talkentry{Разработка управляющего ПО и визуального эмулятора для многоосевого промышленного робота \textit{(диссертация бакалавра)}}{2021-06-24}
+    \talkentry{Сравнение производительности скалярного программного маршрутизатора с программным маршрутизатором на основе векторов}{2023-05-28}
+    \talkentry{Сравнение генераторов сетевого трафика в целях оптимизации процесса тестирования телекоммуникационного оборудования}{2023-05-28}
+    \talkentry{Разработка маршрутизатора передачи данных на основе векторов для увеличения пропускной способности сети \textit{(диссертация магистра)}}{2023-07-01}
+}
+\end{enumerate}
+
+%-----------TEACHING-----------
+\section{Teaching}
+\resumeSubHeadingListStart
+    \resumeSubheading
+        {Уральский Федеральный Университет}{Март 2023 -- Май 2023}
+        {Институт фундаментального образования}{}
+        \resumeItemListStart
+            \small\resumeItem{Руководил студенческими командами в разработке масштабируемых веб-приложений.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+        {Уральский Федеральный Университет }{Сент. 2023 -- Дек. 2023}
+        {Институт фундаментального образования}{}
+        \resumeItemListStart
+            \small\resumeItem{Направлял студенческие проекты, сосредоточенные на создании веб-приложений для онлайн-образовательных платформ.}
+            \resumeItem{Консультировал студентов в проектах по разработке игр, предлагая экспертные знания в области структуры кода, игрового дизайна, выбора библиотек и подходов к разработке.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+        {Уральский Федеральный Университет}{Февр. 2024 -- Май 2024}
+        {Институт фундаментального образования}{}
+        \resumeItemListStart
+            \small\resumeItem{Преподавал основы программирования на Java, делая акцент на его практическом применении в веб-разработке.}
+            \resumeItem{Поддерживал разработку студенческих игр, оказывая специализированную помощь в игровой механике и эффективном применении программных библиотек.}
+            \resumeItem{Осуществлял надзор за созданием и интеграцией веб-образовательных платформ студенческими командами в инфраструктуру университета.}
+        \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------OTHER INTERESTS-----------
+\section{Другие интересы}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \normalsize{\item{
+            \textbf{3D-печать}{: Опыт работы с различными 3D-принтерами благодаря доступу в университете и личным проектам} \\
+            \textbf{Спорт}{: Бег и велоспорт} \\
+            \textbf{Открытое ПО}{: Я глубоко заинтересован в представлении преимуществ программного обеспечения с открытым исходным кодом} \\
+            \textbf{Фотография}{: Навыки использования зеркальных фотоаппаратов, применяю это для визуальной документации личных проектов и исследования творческих возможностей} \\
+    }}    
+\end{itemize}
+
+%-----------LINKS-----------
+\section{Ссылки}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \normalsize{\item{
+                    \textbf{Email}{:  savelii.pototskii@gmail.com} \\
+                    \textbf{LinkedIn}{:  \href{https://linkedin.com/in/savalione/}{linkedin.com/in/savalione/}} \\
+                    \textbf{Github}{:  \href{https://github.com/SavaLione}{github.com/SavaLione}} \\
+                    \textbf{Личная веб-страница}{: \href{https://savalione.com}{savalione.com} } \\
+              }}
+\end{itemize}
+
+%-----------ADDITIONAL LINKS-----------
+\section{Дополнительные ссылки}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \normalsize{\item{
+                    \textbf{ORCID}{: \href{https://orcid.org/0009-0006-5105-465X}{orcid.org/0009-0006-5105-465X} } \\
+                    \textbf{Google for developers}{: \href{https://g.dev/savalione}{g.dev/savalione} } \\
+                    \textbf{Linux foundation}{: \href{https://openprofile.dev/profile/SavaLione}{openprofile.dev/profile/SavaLione} } \\
+                    \textbf{Credly}{: \href{https://www.credly.com/users/sava}{@sava} } \\
+              }}
+\end{itemize}
+
+\end{document}
