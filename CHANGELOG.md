@@ -1,3 +1,7 @@
+2025-05-09
+----------
+- Fixed a typo in the translated versions of the resume (``documents/cv-full-ru.tex``, ``documents/cv-short-ru.tex``)
+
 2025-05-08
 ----------
 - Changed resumes
